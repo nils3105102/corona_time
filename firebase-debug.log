@@ -1,0 +1,108 @@
+[debug] [2020-04-17T13:39:38.275Z] ----------------------------------------------------------------------
+[debug] [2020-04-17T13:39:38.276Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\danii\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-04-17T13:39:38.277Z] CLI Version:   8.1.0
+[debug] [2020-04-17T13:39:38.277Z] Platform:      win32
+[debug] [2020-04-17T13:39:38.277Z] Node Version:  v11.2.0
+[debug] [2020-04-17T13:39:38.278Z] Time:          Fri Apr 17 2020 16:39:38 GMT+0300 (GMT+03:00)
+[debug] [2020-04-17T13:39:38.278Z] ----------------------------------------------------------------------
+[debug] [2020-04-17T13:39:38.278Z] 
+[debug] [2020-04-17T13:39:38.286Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-17T13:39:38.286Z] > authorizing via signed-in user
+[debug] [2020-04-17T13:39:38.286Z] [iam] checking project coronavirus-811b5 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-04-17T13:39:38.289Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/coronavirus-811b5:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-04-17T13:39:39.352Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 17 Apr 2020 13:36:47 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=911","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-04-17T13:39:39.353Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/coronavirus-811b5  
+ 
+[debug] [2020-04-17T13:39:39.664Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 17 Apr 2020 13:36:48 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'coronavirus-811b5'...
+[info] 
+[info] i  deploying hosting
+[debug] [2020-04-17T13:39:39.668Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/coronavirus-811b5/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-04-17T13:39:41.226Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 17 Apr 2020 13:36:49 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[coronavirus-811b5]: beginning deploy...
+[info] i  hosting[coronavirus-811b5]: found 18 files in build
+[debug] [2020-04-17T13:39:41.245Z] [hosting] hash cache [YnVpbGQ] stored for 18 files
+[debug] [2020-04-17T13:39:41.245Z] [hosting][hash queue][FINAL] {"max":2,"min":1,"avg":1,"active":0,"complete":18,"success":18,"errored":0,"retried":0,"total":18,"elapsed":5}
+[debug] [2020-04-17T13:39:41.245Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/coronavirus-811b5/versions/65b631142c2fb74a:populateFiles  
+ <request body omitted>
+[debug] [2020-04-17T13:39:42.586Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 17 Apr 2020 13:36:50 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-04-17T13:39:42.586Z] [hosting][populate queue][FINAL] {"max":1342,"min":1342,"avg":1342,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1342}
+[debug] [2020-04-17T13:39:42.586Z] [hosting] uploads queued: 0
+[debug] [2020-04-17T13:39:42.586Z] [hosting][upload queue][FINAL] {"max":0,"min":9999999999,"avg":0,"active":0,"complete":0,"success":0,"errored":0,"retried":0,"total":0,"elapsed":1587130782586}
+[info] +  hosting[coronavirus-811b5]: file upload complete
+[debug] [2020-04-17T13:39:42.587Z] [hosting] deploy completed after 1359ms
+[debug] [2020-04-17T13:39:42.588Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "coronavirus-811b5"
+    },
+    "site": "coronavirus-811b5",
+    "version": "sites/coronavirus-811b5/versions/65b631142c2fb74a"
+  }
+]
+[info] i  hosting[coronavirus-811b5]: finalizing version...
+[debug] [2020-04-17T13:39:42.588Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/coronavirus-811b5/versions/65b631142c2fb74a?updateMask=status  
+ {"status":"FINALIZED"}
+[debug] [2020-04-17T13:41:01.979Z] ----------------------------------------------------------------------
+[debug] [2020-04-17T13:41:01.981Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\danii\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-04-17T13:41:01.981Z] CLI Version:   8.1.0
+[debug] [2020-04-17T13:41:01.981Z] Platform:      win32
+[debug] [2020-04-17T13:41:01.981Z] Node Version:  v11.2.0
+[debug] [2020-04-17T13:41:01.983Z] Time:          Fri Apr 17 2020 16:41:01 GMT+0300 (GMT+03:00)
+[debug] [2020-04-17T13:41:01.983Z] ----------------------------------------------------------------------
+[debug] [2020-04-17T13:41:01.983Z] 
+[debug] [2020-04-17T13:41:01.989Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-17T13:41:01.990Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\projectsReact\covid-19
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using coronavirus-811b5.
+[debug] [2020-04-17T13:41:07.443Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/coronavirus-811b5  
+ 
+[debug] [2020-04-17T13:41:07.743Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 17 Apr 2020 13:38:16 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] +  Wrote build/404.html
+[debug] [2020-04-17T13:41:29.345Z] >>> HTTP REQUEST GET https://www.gstatic.com/firebasejs/releases.json  
+ 
+[debug] [2020-04-17T13:41:29.463Z] <<< HTTP RESPONSE 200 {"accept-ranges":"bytes","vary":"Accept-Encoding, Origin","content-type":"application/json","content-length":"1429","date":"Fri, 17 Apr 2020 13:27:02 GMT","expires":"Fri, 17 Apr 2020 14:17:02 GMT","last-modified":"Thu, 16 Apr 2020 20:54:14 GMT","x-content-type-options":"nosniff","server":"sffe","x-xss-protection":"0","cache-control":"public, max-age=3000","age":"695","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000"}
